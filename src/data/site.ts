@@ -1,4 +1,4 @@
-import champagne from "@/assets/champagne.jpg.asset.json";
+import champagne from "@/assets/IMG_5809.jpeg";
 import nude from "@/assets/nude-diamante.jpg.asset.json";
 import silver from "@/assets/silver-corset.jpg.asset.json";
 import blackDramatic from "@/assets/black-dramatic.jpg.asset.json";
