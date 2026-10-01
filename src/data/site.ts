@@ -1,7 +1,7 @@
 import champagne from "@/assets/IMG_5809.jpeg";
 import nudeDiamante from "@/assets/IMG_5811.jpeg";
 import silver from
-import blackDramatic from "@/assets/black-dramatic.jpg.asset.json";
+import blackDramatic from "@/assets/IMG_5813.jpeg";
 import blue from "@/assets/blue-sequin.jpg.asset.json";
 import mermaid from "@/assets/black-mermaid.jpg.asset.json";
 import clientLook from "@/assets/client-look.jpg.asset.json";
