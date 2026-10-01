@@ -17,8 +17,21 @@ export function useLuxMotion() {
       { threshold: 0.15, rootMargin: "0px 0px -8% 0px" },
     );
     document
-      .querySelectorAll(".reveal, .reveal-x, .reveal-mask, [data-reveal]")
+      .querySelectorAll(".reveal, .reveal-x, [data-reveal]")
       .forEach((el) => io.observe(el));
+    const masks = new Map<Element, HTMLElement>();
+    document.querySelectorAll<HTMLElement>(".reveal-mask").forEach((el) => masks.set(el.parentElement!, el));
+    const mio = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            masks.get(e.target)?.classList.add("is-in");
+            mio.unobserve(e.target);
+          }
+        }),
+      { threshold: 0.1 },
+    );
+    masks.forEach((_, parent) => mio.observe(parent));
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let ticking = false;
@@ -55,6 +68,7 @@ export function useLuxMotion() {
     update();
     return () => {
       io.disconnect();
+      mio.disconnect();
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
     };
