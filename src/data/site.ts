@@ -11,7 +11,7 @@ import matric from "@/assets/matric.jpg.asset.json";
 // Central, editable content for the whole site.
 export const images = {
   champagne: champagne,
-  nude: nude.
+  nude: nude,
   silver: silver.url,
   blackDramatic: blackDramatic.url,
   blue: blue.url,
