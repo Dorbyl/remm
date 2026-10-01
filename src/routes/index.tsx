@@ -140,7 +140,7 @@ function Index() {
           <h2 data-reveal className="font-display text-6xl md:text-9xl leading-none"><Line>The Pieces</Line></h2>
           <p className="text-muted-foreground max-w-xs mt-6 md:mt-0 reveal">Available for hire or purchase. Refund on return as noted.</p>
         </div>
-        <div className="flex md:grid md:grid-cols-3 gap-5 md:gap-x-10 md:gap-y-24 overflow-x-auto md:overflow-visible snap-x snap-mandatory px-6 md:px-16 max-w-[1600px] mx-auto pb-4 [scrollbar-width:none]">
+        <div className="flex md:grid md:grid-cols-3 gap-5 md:gap-x-10 md:gap-y-24 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-px-6 px-6 md:px-16 max-w-[1600px] mx-auto pb-4 [scrollbar-width:none]">
           {products.map((p, i) => (
             <article key={p.name} className={`group shrink-0 w-[78vw] md:w-auto snap-start reveal ${i % 3 === 1 ? "md:mt-32" : ""}`} style={{ ["--d" as string]: `${(i % 3) * 140}ms` }}>
               <div className="relative aspect-[3/4] overflow-hidden bg-muted">
