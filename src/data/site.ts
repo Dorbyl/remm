@@ -1,6 +1,6 @@
 import champagne from "@/assets/IMG_5809.jpeg";
 import nudeDiamante from "@/assets/IMG_5811.jpeg";
-import silver from "@/assets/IMG_5812.jpeg"
+import silver from
 import blackDramatic from "@/assets/black-dramatic.jpg.asset.json";
 import blue from "@/assets/blue-sequin.jpg.asset.json";
 import mermaid from "@/assets/black-mermaid.jpg.asset.json";
@@ -13,13 +13,13 @@ export const images = {
   champagne: champagne,
   nude: nudeDiamante,
   silver: silver,
-  blackDramatic: blackDramatic.url,
-  blue: blue.url,
-  mermaid: mermaid.url,
-  clientLook: clientLook.url,
-  pink: pink.url,
-  matric: matric.url,
-};
+  blackDramatic: blackDramatic,
+  blue: blue,
+  mermaid: mermaid,
+  clientLook: clientLook,
+  pink: pink,
+  matric: matric,
+}; 
 
 export const business = {
   name: "Remm Boutique",
