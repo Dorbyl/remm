@@ -29,9 +29,9 @@ export function useLuxMotion() {
         const host = el.parentElement!;
         const r = host.getBoundingClientRect();
         if (r.bottom < -100 || r.top > vh + 100) return;
-        const speed = parseFloat(el.dataset.parallax || "0.15");
+        const speed = parseFloat(el.dataset["parallax"] || "0.15");
         const offset = (r.top + r.height / 2 - vh / 2) * -speed;
-        const scale = el.dataset.scale ? 1 + Math.max(0, -r.top / vh) * parseFloat(el.dataset.scale) : 1;
+        const scale = el.dataset["scale"] ? 1 + Math.max(0, -r.top / vh) * parseFloat(el.dataset["scale"]) : 1;
         el.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0) scale(${scale.toFixed(3)})`;
       });
       document.querySelectorAll<HTMLElement>("[data-progress]").forEach((el) => {
