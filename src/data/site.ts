@@ -1,5 +1,5 @@
 import champagne from "@/assets/IMG_5809.jpeg";
-import nude from "@/assets/nude-diamante.jpg.asset.json";
+import nude from "@/assets/IMG_5811.jpeg";
 import silver from "@/assets/silver-corset.jpg.asset.json";
 import blackDramatic from "@/assets/black-dramatic.jpg.asset.json";
 import blue from "@/assets/blue-sequin.jpg.asset.json";
@@ -11,7 +11,7 @@ import matric from "@/assets/matric.jpg.asset.json";
 // Central, editable content for the whole site.
 export const images = {
   champagne: champagne,
-  nude: nude.url,
+  nude: nude.
   silver: silver.url,
   blackDramatic: blackDramatic.url,
   blue: blue.url,
