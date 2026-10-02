@@ -1,12 +1,12 @@
 import champagne from "@/assets/IMG_5809.jpeg";
 import nudeDiamante from "@/assets/IMG_5811.jpeg";
-import silver from
+import silver from "@/assets/IMG_5812.jpeg";
 import blackDramatic from "@/assets/IMG_5813.jpeg";
 import blue from "@/assets/IMG_5814.jpeg";
-import mermaid from "@/assets/black-mermaid.jpg.asset.json";
-import clientLook from "@/assets/client-look.jpg.asset.json";
-import pink from "@/assets/pink-maternity.jpg.asset.json";
-import matric from "@/assets/matric.jpg.asset.json";
+import mermaid from "@/assets/black-mermaid.jpg";
+import clientLook from "@/assets/client-look.jpg";
+import pink from "@/assets/pink-maternity.jpg";
+import matric from "@/assets/matric.jpg";
 
 // Central, editable content for the whole site.
 export const images = {
